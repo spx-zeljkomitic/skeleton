@@ -1,0 +1,9 @@
+knp_gaufrette:
+    adapters:
+        cdn:
+            local:
+                directory: /path/to/my/filesystem
+    filesystems:
+        cdn:
+            adapter:    cdn
+            alias:      cdn_filesystem

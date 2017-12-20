@@ -12,7 +12,7 @@ class DefaultController extends AbstractController
 
     /**
      * @Route("/")
-     * @IsGranted("ROLE_SUPER_ADMIN")
+     * IsGranted("ROLE_SUPER_ADMIN")
      */
     public function homeAction(): Response
     {
