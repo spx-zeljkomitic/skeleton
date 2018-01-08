@@ -1,0 +1,9 @@
+framework:
+    assets:
+        packages:
+            frontend:
+                base_urls:
+                    - 'http://skeleton.flex'
+
+    session:
+        save_path: '/tmp'

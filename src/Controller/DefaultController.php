@@ -9,7 +9,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends AbstractController
 {
-
     /**
      * @Route("/")
      * IsGranted("ROLE_SUPER_ADMIN")
@@ -17,6 +16,6 @@ class DefaultController extends AbstractController
     public function homeAction(): Response
     {
         return $this->render('base.html.twig');
-
     }
 }
+

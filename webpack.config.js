@@ -11,8 +11,9 @@ Encore
     .enableVersioning(Encore.isProduction())
 
     // uncomment to define the assets of the project
-    .addEntry('js/app', './assets/js/app.js')
-    .addStyleEntry('css/app', './assets/scss/app.scss')
+    .addEntry('js/compiled', './assets/js/_global.js')
+    // .addStyleEntry('css/compiled', './assets/combo_css.js')
+    .addStyleEntry('css/compiled', './assets/css/_global.scss')
 
     .enableSassLoader(function (sassOptions) {}, {
         resolveUrlLoader: false

@@ -1,9 +1,8 @@
-knp_gaufrette:
-    adapters:
-        cdn:
-            local:
-                directory: /path/to/my/filesystem
-    filesystems:
-        cdn:
-            adapter:    cdn
-            alias:      cdn_filesystem
+#knp_gaufrette:
+#    adapters:
+#        cdn: '%cdn_adapter_config%'
+#
+#    filesystems:
+#        cdn:
+#            adapter:    cdn
+#            alias:      cdn_filesystem
