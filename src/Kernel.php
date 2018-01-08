@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\DependencyInjection\Compiler\WebPathResolverPass;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -14,7 +15,7 @@ class Kernel extends BaseKernel
 
     protected function build(ContainerBuilder $container): void
     {
-//        $container->addCompilerPass(new CdnCompilerPass());
+        $container->addCompilerPass(new WebPathResolverPass());
     }
 
     public const CONFIG_EXTS = '.{php,xml,yaml,yml}';

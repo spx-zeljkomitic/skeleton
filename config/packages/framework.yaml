@@ -12,8 +12,6 @@ framework:
     assets:
         packages:
             frontend:
-                base_urls:
-                    - '%env(CDN_BASE_URL)%'
                 json_manifest_path: '%kernel.project_dir%/public/build/manifest.json'
     #esi: ~
     #fragments: ~
