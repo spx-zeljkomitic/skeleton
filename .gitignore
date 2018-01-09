@@ -3,6 +3,7 @@
 .env
 /config/parameters.yaml
 /public/bundles/
+/public/media
 /var/
 /vendor/
 ###< symfony/framework-bundle ###

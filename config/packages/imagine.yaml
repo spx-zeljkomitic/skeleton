@@ -2,16 +2,6 @@ liip_imagine:
     # valid drivers options include "gd" or "gmagick" or "imagick"
     driver: "gd"
 
-#    resolvers:
-#        default:
-#            web_path:
-#                web_root: '%env(CDN_BASE_DIR)%'
-#                cache_prefix: "media/cache/thumbs"
-#    loaders:
-#        default:
-#            filesystem:
-#                data_root:
-#                    - '%env(CDN_BASE_DIR)%'
     filter_sets:
         xs:
             filters :

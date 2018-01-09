@@ -10,7 +10,6 @@ class WebPathResolverPass implements CompilerPassInterface
 {
     public function process(ContainerBuilder $builder): void
     {
-        return;
         if (!$builder->hasDefinition('liip_imagine.cache.resolver.prototype.web_path')) {
             return;
         }
@@ -18,5 +17,6 @@ class WebPathResolverPass implements CompilerPassInterface
         $definition = $builder->getDefinition('liip_imagine.cache.resolver.prototype.web_path');
         $definition->setClass(CDNResolverDecorator::class);
         $definition->setArgument(4, $builder->getParameter('env(CDN_BASE_URL)'));
+        $definition->setArgument(5, $builder->getParameter('kernel.debug'));
     }
 }
